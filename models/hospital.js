@@ -10,12 +10,12 @@ const HospitalSchema = Schema(
       type: String,
     },
     usuario: {
-      requerid: true,
+      required: true,
       type: Schema.Types.ObjectId,
       ref: "Usuario",
     },
   },
-  { colecction: "hospitales" }
+  { collection: "hospitales" }
 );
 
 HospitalSchema.method("toJSON", function () {
